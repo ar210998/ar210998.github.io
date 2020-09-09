@@ -1,0 +1,1475 @@
+/* line 1, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/style.sass */
+html {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+/* line 1, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+header {
+  position: relative;
+  height: 50px;
+}
+
+/* line 5, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #212121;
+  z-index: 5;
+}
+
+/* line 12, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.hamburger {
+  display: none;
+}
+
+/* line 15, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 70px;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* line 21, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.menu_link {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* line 25, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.menu_link:hover {
+  text-decoration: none;
+  color: #1eacc7;
+}
+
+/* line 28, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.menu_item {
+  border-right: 2px dotted black;
+  padding-right: 28px;
+}
+
+/* line 31, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.menu_item:last-child {
+  border-right: none;
+}
+
+/* line 34, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.subheader {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 84px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 40, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.subheader_logo {
+  display: block;
+  max-width: 100%;
+  margin-top: 16px;
+}
+
+/* line 44, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.subheader_official {
+  margin-top: 6px;
+  opacity: 0.5;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* line 50, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.subheader_call {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 19px;
+  text-align: right;
+}
+
+/* line 56, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.subheader_phone {
+  display: block;
+  margin-top: 8px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: right;
+  line-height: 12px;
+}
+
+/* line 65, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.subheader_btn {
+  margin-top: 19px;
+  width: 172px;
+  height: 46px;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 4px;
+  background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 2, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_mixins.sass */
+.subheader_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
+}
+
+/* line 80, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.promo {
+  min-height: 800px;
+  background: url("../img/bg/main_bg.jpg") center center/cover no-repeat;
+  padding: 150px 0 135px 0;
+}
+
+/* line 84, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.promo_header {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 60px;
+  margin: 0;
+  text-align: center;
+}
+
+/* line 92, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.promo_subheader {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  margin-top: 22px;
+  text-align: center;
+}
+
+/* line 101, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.promo_descr {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 23px;
+}
+
+/* line 108, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.promo_btn {
+  display: block;
+  margin: 118px auto 0 auto;
+  width: 259px;
+  height: 63px;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 4px;
+  background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 2, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_mixins.sass */
+.promo_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
+}
+
+/* line 124, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.label {
+  position: relative;
+  margin: 0 auto;
+  height: 24px;
+  width: 112px;
+  padding: 5px 12px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 137, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.label_white {
+  background-color: #fff;
+  color: #000;
+}
+
+/* line 140, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.label_min {
+  width: 76px;
+}
+
+/* line 143, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.title {
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 38px;
+  color: #222222;
+  font-size: 38px;
+  line-height: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 154, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.title_white {
+  color: #fff;
+}
+
+/* line 157, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.subtitle {
+  position: relative;
+  margin-top: 19px;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 165, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.subtitle_white {
+  color: #fff;
+}
+
+/* line 168, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.reasons {
+  padding: 71px 0 65px 0;
+}
+
+/* line 170, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.reasons_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+/* line 175, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.reasons_round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 26px;
+  width: 113px;
+  height: 113px;
+  background-color: #1eacc7;
+  border-radius: 100%;
+}
+
+/* line 184, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.reasons_descr {
+  max-width: 343px;
+}
+
+/* line 186, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.reasons_subtitle {
+  line-height: 21px;
+  color: #1eacc7;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* line 191, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.reasons_text {
+  color: #202020;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+/* line 197, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.mobile {
+  min-height: 864px;
+  padding: 48px 0 79px 0;
+  background: url("../img/bg/mobile_app.png") center center/cover no-repeat;
+}
+
+/* line 201, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.mobile .row {
+  margin-top: 32px;
+}
+
+/* line 203, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.mobile_item {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding-top: 92px;
+}
+
+/* line 210, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.mobile_item_1 {
+  background: url("../img/bg/mobile_screen_1.jpg") center center/cover no-repeat;
+}
+
+/* line 212, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.mobile_item_2 {
+  background: url("../img/bg/mobile_screen_2.jpg") center center/cover no-repeat;
+}
+
+/* line 214, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.mobile_item_3 {
+  background: url("../img/bg/mobile_screen_3.jpg") center center/cover no-repeat;
+}
+
+/* line 216, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.mobile_item_4 {
+  background: url("../img/bg/mobile_screen_4.jpg") center center/cover no-repeat;
+}
+
+/* line 218, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.mobile_item_5 {
+  background: url("../img/bg/mobile_screen_5.jpg") center center/cover no-repeat;
+}
+
+/* line 220, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.mobile_item_6 {
+  background: url("../img/bg/mobile_screen_6.jpg") center center/cover no-repeat;
+}
+
+/* line 222, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.mobile_item_subtitle {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 229, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.mobile_item_plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 26px;
+  background-color: #000000;
+  margin: 0 auto;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/* line 243, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.mobile_item_plus:before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #1eacc7;
+  transition: 0.3s all;
+}
+
+/* line 250, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.mobile_item_plus:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  height: 14px;
+  width: 2px;
+  background-color: #1eacc7;
+  transition: 0.3s all;
+}
+
+/* line 261, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.mobile_item_plus:hover:before, .mobile_item_plus:hover:after {
+  background-color: #ff5656;
+}
+
+/* line 265, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.choice {
+  position: relative;
+  min-height: 895px;
+  padding: 57px 0 138px 0;
+  background: url("../img/bg/mobile_app.png") center center/cover no-repeat;
+}
+
+/* line 270, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.choice_img {
+  position: relative;
+  display: block;
+  margin: 56px auto 0 auto;
+  z-index: 2;
+}
+
+/* line 275, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.choice_descr {
+  text-align: center;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/* line 281, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.choice .black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 499px;
+  width: 100%;
+  background-color: #070716;
+  z-index: 1;
+}
+
+/* line 290, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.require {
+  padding: 68px 0 84px 0;
+}
+
+/* line 292, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.require_block {
+  margin: 33px 0;
+}
+
+/* line 294, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.require_block_nmb {
+  margin-bottom: 0px;
+}
+
+/* line 296, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.require_title {
+  color: #1ca8c3;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/* line 300, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.require_list {
+  list-style-type: none;
+  padding-left: 50px;
+  margin-top: 22px;
+}
+
+/* line 304, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.require_list li {
+  position: relative;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+/* line 310, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.require_list li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -32px;
+  top: 3px;
+  width: 21px;
+  height: 20px;
+  background: url("../icons/check_blue.svg") center center/cover no-repeat;
+}
+
+/* line 319, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.require_descr {
+  margin-top: 25px;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #1ca8c3;
+}
+
+/* line 326, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.require .warning .require_title {
+  color: #ff5656;
+}
+
+/* line 330, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.require .warning .require_list li:before {
+  background: url("../icons/check_red.svg") center center/cover no-repeat;
+}
+
+/* line 333, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.world {
+  position: relative;
+  min-height: 717px;
+  padding: 49px 0;
+  background: url("../img/bg/map.jpg") center center/cover no-repeat;
+}
+
+/* line 338, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.world_link {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 49px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 68px;
+  text-transform: uppercase;
+  color: #1fbad6;
+}
+
+/* line 349, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.world_link:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 353, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+footer {
+  padding: 14px 23px 39px 23px;
+}
+
+/* line 356, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+footer a:hover {
+  text-decoration: none;
+}
+
+/* line 359, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.footer_divider {
+  width: 299px;
+  height: 4px;
+  background-color: #1fbad6;
+  margin: 0 auto;
+}
+
+/* line 364, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 32px;
+}
+
+/* line 369, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.footer_wrapper > div {
+  width: 33%;
+}
+
+/* line 371, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.footer_wrapper > div:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 374, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.footer_social {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 378, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.footer_social_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4px;
+  width: 32px;
+  height: 32px;
+  background-color: #070716;
+  border-radius: 100%;
+}
+
+/* line 387, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.footer_social_item i {
+  color: #fff;
+}
+
+/* line 389, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.footer_links {
+  width: 390px;
+  margin: 0 auto;
+}
+
+/* line 392, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.footer_links_main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+/* line 396, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.footer_links_main a {
+  color: #070716;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 401, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.footer_links_sub {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+/* line 406, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.footer_links_sub a {
+  color: #999999;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 411, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.footer_links_lang {
+  display: block;
+  margin: 0 auto;
+  color: #1fbad6;
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 19px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 423, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_general.sass */
+.xs-visible {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  /* line 3, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 20px;
+  }
+  /* line 5, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .menu_link {
+    font-size: 13px;
+  }
+  /* line 9, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .promo_header {
+    font-size: 50px;
+  }
+  /* line 12, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .title {
+    margin-top: 34px;
+    font-size: 34px;
+    line-height: 34px;
+  }
+  /* line 17, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .subtitle {
+    margin-top: 18px;
+    font-size: 16px;
+  }
+  /* line 22, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .reasons_block {
+    align-items: flex-start;
+  }
+  /* line 24, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .reasons_descr {
+    max-width: 300px;
+  }
+  /* line 27, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .mobile {
+    min-height: 864px;
+    padding: 48px 0 79px 0;
+  }
+  /* line 30, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .mobile_item {
+    width: 270px;
+    height: 245px;
+    padding-top: 81px;
+  }
+  /* line 34, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .mobile_item_subtitle {
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 27px;
+    bottom: 15px;
+  }
+  /* line 40, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .choice {
+    min-height: 754px;
+    padding: 48px 0 116px 0;
+  }
+  /* line 43, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .choice_img {
+    width: 67%;
+    margin: 39px auto 0 auto;
+  }
+  /* line 46, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .choice_descr {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  /* line 49, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .choice .black {
+    height: 420px;
+  }
+  /* line 52, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .world {
+    min-height: 702px;
+    padding: 49px 0;
+  }
+  /* line 55, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .world_link {
+    font-size: 14px;
+    line-height: 14px;
+    bottom: 49px;
+  }
+  /* line 61, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .world_divider {
+    width: 253px;
+  }
+  /* line 63, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .world_wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 22px;
+  }
+  /* line 69, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .world_wrapper .a1 {
+    order: 2;
+  }
+  /* line 71, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .world_wrapper .a2 {
+    order: 1;
+  }
+  /* line 73, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .world_wrapper .a3 {
+    order: 3;
+  }
+  /* line 75, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .world_wrapper > div {
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  /* line 79, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .world_social {
+    order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 0;
+  }
+  /* line 85, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .world_social_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4px;
+    width: 32px;
+    height: 32px;
+    background-color: #070716;
+    border-radius: 100%;
+  }
+  /* line 94, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .world_social_item i {
+    color: #fff;
+  }
+  /* line 96, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .world_links {
+    width: 580px;
+    margin: 0 auto;
+    order: 1;
+  }
+  /* line 100, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .world_links_main {
+    padding: 0;
+  }
+  /* line 102, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .world_links_main a {
+    font-size: 15px;
+  }
+  /* line 104, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .world_links_sub {
+    flex-flow: row wrap;
+    align-content: flex-end;
+    padding: 0 23px;
+  }
+  /* line 108, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .world_links_lang {
+    margin-top: 13px;
+  }
+  /* line 110, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .world_mobile {
+    padding: 20px;
+    order: 3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 117, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .world_mobile img {
+    width: 83px;
+    margin: 0 3px;
+  }
+  /* line 122, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .footer_wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    padding-top: 22px;
+  }
+  /* line 128, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .footer_wrapper .a1 {
+    order: 2;
+    width: 49%;
+  }
+  /* line 131, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .footer_wrapper .a2 {
+    order: 1;
+    width: 100%;
+  }
+  /* line 134, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .footer_wrapper .a3 {
+    order: 3;
+    width: 49%;
+  }
+  /* line 137, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .footer_wrapper > div {
+    justify-content: center;
+    align-items: flex-start;
+  }
+  /* line 140, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .footer_social {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 0 0 0;
+  }
+  /* line 144, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .footer_links {
+    width: 480px;
+    margin: 0 auto;
+  }
+  /* line 147, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .footer_links_main {
+    padding: 0;
+  }
+  /* line 149, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .footer_links_main a {
+    font-size: 15px;
+  }
+  /* line 151, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .footer_links_sub {
+    flex-flow: row wrap;
+    align-content: flex-end;
+    padding: 0 23px;
+  }
+  /* line 155, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .footer_links_lang {
+    margin-top: 13px;
+  }
+  /* line 157, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .footer_mobile {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0 0 0;
+  }
+  /* line 161, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .footer_mobile img {
+    margin: 0 3px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 166, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 8px;
+  }
+  /* line 168, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .menu_link {
+    font-size: 10px;
+  }
+  /* line 173, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .subheader_logo img {
+    width: 100%;
+  }
+  /* line 175, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .subheader_official {
+    font-size: 11px;
+  }
+  /* line 177, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .subheader_phone {
+    font-size: 18px;
+  }
+  /* line 179, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .subheader_btn {
+    margin-top: 21px;
+    height: 40px;
+    width: 100%;
+  }
+  /* line 185, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .promo_header {
+    font-size: 40px;
+  }
+  /* line 187, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .promo_subheader {
+    font-size: 30px;
+  }
+  /* line 190, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .title {
+    margin-top: 30px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  /* line 195, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .subtitle {
+    margin-top: 17px;
+    font-size: 15px;
+  }
+  /* line 200, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .reasons_block {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  /* line 203, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .reasons_round {
+    margin: 0;
+  }
+  /* line 205, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .reasons_descr {
+    max-width: 300px;
+    margin-top: 20px;
+  }
+  /* line 209, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .mobile {
+    min-height: 864px;
+    padding: 48px 0 79px 0;
+  }
+  /* line 212, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .mobile_item {
+    width: 320px;
+    height: 280px;
+    padding-top: 92px;
+  }
+  /* line 216, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .mobile_item_subtitle {
+    color: #ffffff;
+    font-size: 23px;
+    line-height: 31px;
+    bottom: 35px;
+  }
+  /* line 222, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .choice {
+    min-height: 565px;
+    padding: 36px 0 87px 0;
+  }
+  /* line 225, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .choice .subtitle {
+    display: none;
+  }
+  /* line 227, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .choice_img {
+    width: 67%;
+    margin: 45px auto 0 auto;
+  }
+  /* line 230, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .choice_descr {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  /* line 233, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .choice .black {
+    height: 315px;
+  }
+  /* line 236, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .world {
+    min-height: 534px;
+    padding: 37px 0;
+  }
+  /* line 239, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .world_link {
+    bottom: 37px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 243, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .menu {
+    position: fixed;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 1s all;
+  }
+  /* line 255, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .menu_active {
+    left: 0;
+  }
+  /* line 257, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .menu_item {
+    margin: 10px 0 0 0;
+    padding-right: 0;
+    border: 0;
+    padding: 5px 0;
+    width: 100%;
+    text-align: center;
+  }
+  /* line 264, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .menu_link {
+    font-size: 20px;
+    display: block;
+  }
+  /* line 268, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 12px;
+  }
+  /* line 276, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .hamburger span {
+    display: block;
+    margin: 0 0 2px 0;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    transition: 1s all;
+  }
+  /* line 284, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .hamburger_active span {
+    margin: 0 0 -2px 0;
+  }
+  /* line 286, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .hamburger_active span:first-child {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  /* line 288, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  /* line 290, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .hamburger_active span:last-child {
+    transform: translateY(3px) rotate(45deg);
+  }
+  /* line 293, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .xs-hidden {
+    display: none;
+  }
+  /* line 296, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .xs-visible {
+    display: block;
+  }
+  /* line 300, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .subheader_phone {
+    display: block;
+    margin: 10px auto 0 auto;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  /* line 307, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .subheader_btn {
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 10px auto 0 auto;
+  }
+  /* line 314, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .promo_header {
+    line-height: 45px;
+  }
+  /* line 317, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .title {
+    margin-top: 26px;
+    font-size: 26px;
+    line-height: 26px;
+  }
+  /* line 322, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .subtitle {
+    margin-top: 16px;
+    font-size: 14px;
+  }
+  /* line 326, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .mobile {
+    min-height: 864px;
+    padding: 48px 0 79px 0;
+  }
+  /* line 329, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .mobile_item {
+    width: 227px;
+    height: 199px;
+    padding-top: 65px;
+  }
+  /* line 333, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .mobile_item_subtitle {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  /* line 337, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .mobile_item_plus {
+    bottom: 25px;
+  }
+  /* line 340, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .choice {
+    min-height: 424px;
+    padding: 27px 0 65px 0;
+  }
+  /* line 343, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .choice .title {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  /* line 346, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .choice_img {
+    width: 67%;
+    margin: 30px auto 0 auto;
+  }
+  /* line 349, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .choice_descr {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  /* line 352, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .choice .black {
+    height: 236px;
+  }
+  /* line 355, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .world {
+    min-height: 408px;
+    padding: 29px 0;
+  }
+  /* line 358, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .world_link {
+    bottom: 29px;
+  }
+  /* line 361, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  footer {
+    padding: 25px 23px 20px 23px;
+  }
+  /* line 365, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .footer_wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  /* line 370, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .footer_wrapper > div {
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  /* line 374, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .footer_social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 0;
+  }
+  /* line 379, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .footer_links {
+    width: 280px;
+    margin: 0 auto;
+  }
+  /* line 382, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .footer_links_main {
+    padding: 0;
+  }
+  /* line 384, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .footer_links_main a {
+    font-size: 14px;
+  }
+  /* line 386, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .footer_links_sub {
+    flex-flow: row wrap;
+    align-content: flex-end;
+    padding: 0 23px;
+  }
+  /* line 390, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .footer_links_lang {
+    margin-top: 13px;
+  }
+  /* line 392, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .footer_mobile {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 398, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .footer_mobile img {
+    width: 83px;
+    margin: 0 3px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 403, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  nav {
+    height: 30px;
+  }
+  /* line 406, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  header {
+    height: 30px;
+  }
+  /* line 409, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .subheader {
+    top: 30px;
+    height: 60px;
+  }
+  /* line 412, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .subheader_official {
+    display: none;
+  }
+  /* line 414, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .subheader_logo {
+    margin-top: 16px;
+  }
+  /* line 416, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .subheader_phone {
+    margin-top: 11px;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  /* line 421, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .subheader_btn {
+    margin-top: 6px;
+    width: 110px;
+    height: 22px;
+    font-size: 10px;
+  }
+  /* line 427, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .promo {
+    min-height: 400px;
+    padding: 93px 0 35px 0;
+  }
+  /* line 430, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .promo_header {
+    padding: 0 24px;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  /* line 434, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .promo_subheader {
+    margin-top: 33px;
+    padding: 0 10px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  /* line 439, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .promo_descr {
+    display: none;
+  }
+  /* line 441, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .promo_btn {
+    margin-top: 72px;
+    width: 210px;
+    height: 50px;
+  }
+  /* line 446, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .menu {
+    width: 85%;
+  }
+  /* line 449, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .reasons {
+    padding: 22px 0 36px 0;
+  }
+  /* line 451, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .reasons_block {
+    margin-top: 26px;
+  }
+  /* line 453, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .reasons_round {
+    width: 100px;
+    height: 100px;
+  }
+  /* line 456, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .reasons_descr {
+    width: 100%;
+    margin: 27px 0 0 0;
+  }
+  /* line 459, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .reasons_subtitle {
+    font-size: 16px;
+  }
+  /* line 462, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .mobile {
+    min-height: 864px;
+    padding: 25px 0 24px 0;
+    background: url("../img/bg/mobile_app.png") center center/cover no-repeat;
+  }
+  /* line 466, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .mobile .subtitle {
+    font-size: 14px;
+    margin: 11px 0 0 0;
+  }
+  /* line 469, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .mobile .row {
+    margin-top: 32px;
+  }
+  /* line 471, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .mobile_item {
+    width: 290px;
+    height: 254px;
+    margin-bottom: 30px;
+    padding-top: 81px;
+  }
+  /* line 476, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .mobile_item_subtitle {
+    margin: 0 auto;
+    width: 200px;
+    font-size: 18px;
+  }
+  /* line 480, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .mobile_item_plus {
+    bottom: 22px;
+  }
+  /* line 483, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .title {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  /* line 488, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .choice {
+    position: relative;
+    min-height: 390px;
+    padding: 25px 0 33px 0;
+    background: #070716;
+  }
+  /* line 493, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .choice .title {
+    display: none;
+  }
+  /* line 495, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .choice .subtitle {
+    display: none;
+  }
+  /* line 497, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .choice_img {
+    position: relative;
+    display: block;
+    margin: 35px auto 0 auto;
+    z-index: 2;
+  }
+  /* line 502, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .choice_descr {
+    margin: 23px auto 0 auto;
+    color: white;
+    width: 250px;
+  }
+  /* line 506, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .choice .black {
+    display: none;
+  }
+  /* line 509, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .require {
+    padding: 25px 0 26px 0;
+  }
+  /* line 511, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .require_block {
+    margin: 22px 0 11px 0;
+  }
+  /* line 513, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .require_title {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  /* line 516, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .require_list {
+    list-style-type: none;
+    padding-left: 30px;
+    margin-top: 15px;
+  }
+  /* line 520, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .require_list li {
+    position: relative;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+  /* line 526, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .require_list li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -32px;
+    top: 3px;
+    width: 21px;
+    height: 20px;
+    background: url("../icons/check_blue.svg") center center/cover no-repeat;
+  }
+  /* line 535, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .require_descr {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  /* line 539, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .require_descr br {
+    display: none;
+  }
+  /* line 542, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .require .warning .require_title {
+    color: #ff5656;
+  }
+  /* line 546, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .require .warning .require_list li:before {
+    background: url("../icons/check_red.svg") center center/cover no-repeat;
+  }
+  /* line 549, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .world {
+    min-height: 360px;
+    padding: 25px 0;
+  }
+  /* line 552, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .world .title {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 16px;
+    position: relative;
+  }
+  /* line 557, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .world .subtitle {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  /* line 561, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .world_link {
+    bottom: 30px;
+    width: 200px;
+    font-size: 14px;
+  }
+  /* line 567, D:/Dokumente/Sites/Project_7_Trainig_Mobile/src/sass/_media.sass */
+  .footer_divider {
+    width: 253px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
